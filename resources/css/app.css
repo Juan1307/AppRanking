@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+}
+
+@layer components {
+  
+  .container-content{
+    @apply p-4 border rounded bg-gray-50;
+  }
+
+  .navbar-content{
+    @apply flex justify-center;
+  }
+
+  .navbar-item{
+    @apply cursor-pointer rounded-t px-2 py-1 bg-gray-100 border; 
+  }
+
+  .navbar-item.item-active{
+    @apply border-orange-500 bg-orange-400 text-white;
+  }
+
+  .card{
+    @apply border rounded;
+  }
+
+  .card-header{
+    @apply flex justify-between;
+  }
+  
+  .card-body{
+    @apply flex flex-col;
+  }
+
+  .btn{
+    @apply px-2 py-1 border rounded text-center; 
+  }
+
+  .btn-primary{
+    @apply border-orange-500 bg-orange-400 text-white; 
+    @apply transition-colors hover:border-orange-600 hover:bg-orange-500; 
+  }
+
+  .link-primary{
+    @apply text-orange-500 hover:underline hover:decoration-orange-400;
+  }
+
+  /* Student Classes */
+  .student-card{
+    @apply card p-2 border-orange-400;
+  }
+
+  .student-header{
+    @apply card px-2 py-3 bg-gray-200;
+  }
+
+  /* course classes */
+  .course-card{
+    @apply card p-2 border-orange-400;
+  }
+
+}
